@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 html,
 body {
   padding: 0;
@@ -15,12 +18,24 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.cast-card,
+.episod-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: solid 1px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border-image-slice: 1;
+  border-image-repeat: round;
+  border-image-width: 1px;
+  border-image-source: linear-gradient(
+    rgba(132, 247, 41, 0.75),
+    rgba(21, 191, 253, 0.75)
+  );
 }
+
+.slick-slide div {
+  /* margin: 0 10px; */
+}
+/* .slick-list {
+  margin: 0 -7px;
+} */
